@@ -7,66 +7,48 @@ theme = "congo"
 home = ["HTML", "RSS", "JSON"]
 
 [params]
-description = "Welcome to Aditya's blog"
-
-authorname = " S Aditya"
-
-# Set default theme color (can be overridden by user)
+description = "Exploring DevOps, Cloud, and Beyond"
+authorname = "S Aditya"
 defaultTheme = "dark"
-
-# Enable search
 enableSearch = true
+navbarTitle = "Aditya3w3733"
 
-# Navbar title
-navbarTitle = "Aditya3w3733's Blog"
-
-# Footer configuration
 [params.footer]
-#showCopyright = true
-#showThemeAttribution = true
-#showAppearanceSwitcher = true
+showCopyright = false
+showThemeAttribution = false
+showAppearanceSwitcher = false
 
-# Enable comments via Disqus
-disqusShortname = ""
-
-# Homepage configuration
 [params.homepage]
-layout = "profile" # Use profile layout
+layout = "custom"
 showRecent = true
 
-# Author configuration (for profile page)
 [params.author]
 name = "S Aditya"
 image = "img/author.jpg"
-# Place your photo in the static/img directory
-headline = "DevOps Intern & Tech Enthusiast"
-bio = "Hello! I'm Aditya, a passionate devops intern with interests in cloud computing, AI, and open-source technologies. I love exploring new tech stacks and sharing my learnings through this blog. When I'm not coding, you can playing chess or reading sci-fi novels."
+headline = "DevOps Engineer & Tech Explorer"
+bio = "Hello! I'm Aditya, a DevOps engineer passionate about cloud computing, AI, and open-source technologies. Join me as I share insights and experiences from my tech journey."
 
 [params.author.social]
 github = "https://github.com/aditya3w3733"
 linkedin = "https://www.linkedin.com/in/saditya3733"
 mastodon = "https://mastodon.social/@aditya3w3733"
 
-# Main menu items
 [[menu.main]]
 name = "Home"
 pageRef = "/"
 weight = 10
 
 [[menu.main]]
-name = "Posts"
+name = "Blog"
 pageRef = "posts"
 weight = 20
 
-[[menu.main]]
-name = "Tags"
-pageRef = "tags"
-weight = 30
+[permalinks]
+posts = "/blog/:year/:title/"
 
-# Pagination
-paginate = 10
-
+[taxonomies]
+tag = "tags"
 
 [module]
 [[module.imports]]
-path = "congo"
+path = "github.com/jpanther/congo/v2"
