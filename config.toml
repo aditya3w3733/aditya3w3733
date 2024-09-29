@@ -69,4 +69,4 @@ paginate = 10
 
 [module]
   [[module.imports]]
-    path = "github.com/jpanther/congo"
+    path = "congo"
