@@ -4,69 +4,68 @@ title = "Aditya's Blog"
 theme = "congo"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+home = ["HTML", "RSS", "JSON"]
 
 [params]
-  description = "Welcome to Aditya's personal blog"
+description = "Welcome to Aditya's personal blog"
 
-  authorname = "Aditya"
+authorname = " S Aditya"
 
-  # Set default theme color (can be overridden by user)
-  defaultTheme = "dark"
+# Set default theme color (can be overridden by user)
+defaultTheme = "dark"
 
-  # Enable search
-  enableSearch = true
+# Enable search
+enableSearch = true
 
-  # Navbar title
-  navbarTitle = "Aditya's Blog"
+# Navbar title
+navbarTitle = "Aditya's Blog"
 
-  # Footer configuration
-  [params.footer]
-    showCopyright = true
-    showThemeAttribution = true
-    showAppearanceSwitcher = true
+# Footer configuration
+[params.footer]
+showCopyright = true
+showThemeAttribution = true
+showAppearanceSwitcher = true
 
-  # Enable comments via Disqus
-  disqusShortname = ""
+# Enable comments via Disqus
+disqusShortname = ""
 
-  # Homepage configuration
-  [params.homepage]
-    layout = "profile" # Use profile layout
-    showRecent = true
+# Homepage configuration
+[params.homepage]
+layout = "profile" # Use profile layout
+showRecent = true
 
-  # Author configuration (for profile page)
-  [params.author]
-    name = "Aditya"
-    image = "img/author.jpg"  # Place your photo in the static/img directory
-    headline = "Software Developer & Tech Enthusiast"
-    bio = "Hello! I'm Aditya, a passionate software developer with interests in cloud computing, AI, and open-source technologies. I love exploring new tech stacks and sharing my learnings through this blog. When I'm not coding, you can find me hiking or reading sci-fi novels."
+# Author configuration (for profile page)
+[params.author]
+name = "Aditya"
+image = "img/author.jpg"                                                                                                                                                                                                                                                           # Place your photo in the static/img directory
+headline = "Software Developer & Tech Enthusiast"
+bio = "Hello! I'm Aditya, a passionate software developer with interests in cloud computing, AI, and open-source technologies. I love exploring new tech stacks and sharing my learnings through this blog. When I'm not coding, you can find me hiking or reading sci-fi novels."
 
-    [params.author.social]
-      github = "https://github.com/aditya3w3733"
-      linkedin = "https://www.linkedin.com/in/saditya3733"
-      mastodon = "https://mastodon.social/@aditya3w3733"
+[params.author.social]
+github = "https://github.com/aditya3w3733"
+linkedin = "https://www.linkedin.com/in/saditya3733"
+mastodon = "https://mastodon.social/@aditya3w3733"
 
 # Main menu items
 [[menu.main]]
-  name = "Home"
-  pageRef = "/"
-  weight = 10
+name = "Home"
+pageRef = "/"
+weight = 10
 
 [[menu.main]]
-  name = "Posts"
-  pageRef = "posts"
-  weight = 20
+name = "Posts"
+pageRef = "posts"
+weight = 20
 
 [[menu.main]]
-  name = "Tags"
-  pageRef = "tags"
-  weight = 30
+name = "Tags"
+pageRef = "tags"
+weight = 30
 
 # Pagination
 paginate = 10
 
 
-
 [module]
-  [[module.imports]]
-    path = "congo"
+[[module.imports]]
+path = "congo"
