@@ -38,7 +38,7 @@ showRecent = true
 [params.author]
 name = "Aditya"
 image = "img/author.jpg"                                                                                                                                                                                                                                                           # Place your photo in the static/img directory
-headline = "Software Developer & Tech Enthusiast"
+headline = "DevOps Intern & Tech Enthusiast"
 bio = "Hello! I'm Aditya, a passionate software developer with interests in cloud computing, AI, and open-source technologies. I love exploring new tech stacks and sharing my learnings through this blog. When I'm not coding, you can find me hiking or reading sci-fi novels."
 
 [params.author.social]
