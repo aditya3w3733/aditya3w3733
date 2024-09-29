@@ -3,51 +3,51 @@ languageCode = "en-us"
 title = "Aditya3w3733's Blog"
 theme = "congo"
 
+# Outputs
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
+# Pagination
+paginate = 10
+
+# Permalinks
+[permalinks]
+posts = "/blog/:year/:title/"
+
+# Module imports
+[module]
+[[module.imports]]
+path = "congo"
+
+# Site parameters
 [params]
 description = "Welcome to Aditya's blog"
-
-authorname = " S Aditya"
-
-# Set default theme color (can be overridden by user)
+authorname = "S Aditya"
 defaultTheme = "dark"
-
-# Enable search
 enableSearch = true
-
-# Navbar title
 navbarTitle = "Aditya3w3733's Blog"
 
-# Footer configuration
+[params.homepage]
+layout = "profile"
+showRecent = true
+
 [params.footer]
 showCopyright = false
 showThemeAttribution = false
 showAppearanceSwitcher = false
 
-# Enable comments via Disqus
-disqusShortname = ""
-
-# Homepage configuration
-[params.homepage]
-layout = "profile" # Use profile layout
-showRecent = true
-
-# Author configuration (for profile page)
 [params.author]
 name = "S Aditya"
 image = "img/author.jpg"
-# Place your photo in the static/img directory
 headline = "DevOps Intern & Tech Enthusiast"
-bio = "Hello! I'm Aditya, a passionate devops intern with interests in cloud computing, AI, and open-source technologies. I love exploring new tech stacks and sharing my learnings through this blog. When I'm not coding, you can playing chess or reading sci-fi novels."
+bio = "Hello! I'm Aditya, a passionate devops intern with interests in cloud computing, AI, and open-source technologies. I love exploring new tech stacks and sharing my learnings through this blog. When I'm not coding, you can find me playing chess or reading sci-fi novels."
 
 [params.author.social]
 github = "https://github.com/aditya3w3733"
 linkedin = "https://www.linkedin.com/in/saditya3733"
 mastodon = "https://mastodon.social/@aditya3w3733"
 
-# Main menu items
+# Main menu
 [[menu.main]]
 name = "Home"
 pageRef = "/"
@@ -57,14 +57,3 @@ weight = 10
 name = "Posts"
 pageRef = "posts"
 weight = 20
-
-[permalinks]
-posts = "/blog/:year/:title/"
-
-# Pagination
-paginate = 10
-
-
-[module]
-[[module.imports]]
-path = "congo"
