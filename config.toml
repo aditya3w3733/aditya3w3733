@@ -1,6 +1,6 @@
 baseURL = "https://aditya3w3733.in"
 languageCode = "en-us"
-title = "Aditya3w3733's Blog"
+title = "Aditya3w3733"
 theme = "congo"
 
 # Outputs
@@ -21,26 +21,26 @@ path = "congo"
 
 # Site parameters
 [params]
-description = "Welcome to Aditya's blog"
+description = "DevOps Engineer & Tech Explorer"
 authorname = "S Aditya"
 defaultTheme = "dark"
 enableSearch = true
-navbarTitle = "Aditya3w3733's Blog"
+navbarTitle = "Aditya3w3733"
 
 [params.homepage]
-layout = "profile"
-showRecent = true
+layout = "custom"
+showRecent = false
 
 [params.footer]
-showCopyright = false
+showCopyright = true
 showThemeAttribution = false
-showAppearanceSwitcher = false
+showAppearanceSwitcher = true
 
 [params.author]
 name = "S Aditya"
 image = "img/author.jpg"
 headline = "DevOps Intern & Tech Enthusiast"
-bio = "Hello! I'm Aditya, a passionate devops intern with interests in cloud computing, AI, and open-source technologies. I love exploring new tech stacks and sharing my learnings through this blog. When I'm not coding, you can find me playing chess or reading sci-fi novels."
+bio = "Hello! I'm Aditya, a passionate DevOps intern with interests in cloud computing, AI, and open-source technologies. I love exploring new tech stacks and sharing my learnings through this blog. When I'm not coding, you can find me playing chess or reading sci-fi novels."
 
 [params.author.social]
 github = "https://github.com/aditya3w3733"
@@ -54,6 +54,6 @@ pageRef = "/"
 weight = 10
 
 [[menu.main]]
-name = "Posts"
+name = "Blog"
 pageRef = "posts"
 weight = 20
