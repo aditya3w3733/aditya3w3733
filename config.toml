@@ -22,9 +22,9 @@ navbarTitle = "Aditya3w3733's Blog"
 
 # Footer configuration
 [params.footer]
-#showCopyright = true
-#showThemeAttribution = true
-#showAppearanceSwitcher = true
+showCopyright = false
+showThemeAttribution = false
+showAppearanceSwitcher = false
 
 # Enable comments via Disqus
 disqusShortname = ""
@@ -58,10 +58,8 @@ name = "Posts"
 pageRef = "posts"
 weight = 20
 
-[[menu.main]]
-name = "Tags"
-pageRef = "tags"
-weight = 30
+[permalinks]
+posts = "/blog/:year/:title/"
 
 # Pagination
 paginate = 10
