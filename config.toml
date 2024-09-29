@@ -36,10 +36,10 @@ showRecent = true
 
 # Author configuration (for profile page)
 [params.author]
-name = "Aditya"
-image = "img/author.jpg"                                                                                                                                                                                                                                                          # Place your photo in the static/img directory
+name = "S Aditya"
+image = "img/author.jpg"                                                                                                                                                                                                                                                     # Place your photo in the static/img directory
 headline = "DevOps Intern & Tech Enthusiast"
-bio = "Hello! I'm Aditya, a passionate software developer with interests in cloud computing, AI, and open-source technologies. I love exploring new tech stacks and sharing my learnings through this blog. When I'm not coding, you can playing chess or reading sci-fi novels."
+bio = "Hello! I'm Aditya, a passionate devops intern with interests in cloud computing, AI, and open-source technologies. I love exploring new tech stacks and sharing my learnings through this blog. When I'm not coding, you can playing chess or reading sci-fi novels."
 
 [params.author.social]
 github = "https://github.com/aditya3w3733"
