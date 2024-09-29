@@ -1,0 +1,40 @@
+name: Aditya3w3733 Blog
+
+on:
+  push:
+    branches:
+      - master 
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+
+    - name: Setup SSH
+      uses: webfactory/ssh-agent@v0.5.0
+      with:
+        ssh-private-key: ${{ secrets.SERVER_SSH_KEY }}
+
+    - name: Build and push Docker image
+      env:
+        DOCKER_HOST: ssh://ubuntu@ec2-54-158-173-179.compute-1.amazonaws.com
+      run: |
+        docker-compose build
+        docker-compose push
+
+    - name: Deploy to EC2
+      env:
+        HOST: ec2-54-158-173-179.compute-1.amazonaws.com
+        USER: ubuntu
+      run: |
+        ssh -o StrictHostKeyChecking=no $USER@$HOST << EOF
+          cd aditya3w3733
+          git pull origin master
+          docker-compose pull
+          docker-compose down
+          docker-compose up -d
+        EOF
