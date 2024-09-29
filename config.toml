@@ -22,9 +22,9 @@ navbarTitle = "Aditya3w3733's Blog"
 
 # Footer configuration
 [params.footer]
-showCopyright = true
-showThemeAttribution = true
-showAppearanceSwitcher = true
+#showCopyright = true
+#showThemeAttribution = true
+#showAppearanceSwitcher = true
 
 # Enable comments via Disqus
 disqusShortname = ""
@@ -37,7 +37,8 @@ showRecent = true
 # Author configuration (for profile page)
 [params.author]
 name = "S Aditya"
-image = "img/author.jpg"                                                                                                                                                                                                                                                     # Place your photo in the static/img directory
+image = "img/author.jpg"
+# Place your photo in the static/img directory
 headline = "DevOps Intern & Tech Enthusiast"
 bio = "Hello! I'm Aditya, a passionate devops intern with interests in cloud computing, AI, and open-source technologies. I love exploring new tech stacks and sharing my learnings through this blog. When I'm not coding, you can playing chess or reading sci-fi novels."
 
