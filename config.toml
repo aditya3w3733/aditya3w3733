@@ -1,13 +1,13 @@
 baseURL = "https://aditya3w3733.in"
 languageCode = "en-us"
-title = "Aditya's Blog"
+title = "Aditya3w3733's Blog"
 theme = "congo"
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 
 [params]
-description = "Welcome to Aditya's personal blog"
+description = "Welcome to Aditya's blog"
 
 authorname = " S Aditya"
 
@@ -18,7 +18,7 @@ defaultTheme = "dark"
 enableSearch = true
 
 # Navbar title
-navbarTitle = "Aditya's Blog"
+navbarTitle = "Aditya3w3733's Blog"
 
 # Footer configuration
 [params.footer]
@@ -37,9 +37,9 @@ showRecent = true
 # Author configuration (for profile page)
 [params.author]
 name = "Aditya"
-image = "img/author.jpg"                                                                                                                                                                                                                                                           # Place your photo in the static/img directory
+image = "img/author.jpg"                                                                                                                                                                                                                                                          # Place your photo in the static/img directory
 headline = "DevOps Intern & Tech Enthusiast"
-bio = "Hello! I'm Aditya, a passionate software developer with interests in cloud computing, AI, and open-source technologies. I love exploring new tech stacks and sharing my learnings through this blog. When I'm not coding, you can find me hiking or reading sci-fi novels."
+bio = "Hello! I'm Aditya, a passionate software developer with interests in cloud computing, AI, and open-source technologies. I love exploring new tech stacks and sharing my learnings through this blog. When I'm not coding, you can playing chess or reading sci-fi novels."
 
 [params.author.social]
 github = "https://github.com/aditya3w3733"

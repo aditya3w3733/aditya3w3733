@@ -1,15 +1,14 @@
-version: '3'
-
+version: "3"
 services:
   hugosite:
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile
+    image: adity3w3733/hugosite:latest
     container_name: hugo_site
     restart: always
     networks:
       - web
-
   nginx:
     image: nginx:alpine
     container_name: nginx_proxy
@@ -25,7 +24,6 @@ services:
       - web
     depends_on:
       - hugosite
-
 networks:
   web:
     driver: bridge
